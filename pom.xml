@@ -16,8 +16,7 @@
 	</properties>
 
 	<dependencies>
-
-		<dependencies>
+	
 		<!-- all dependencies will be here -->
 				
 		<dependency>
