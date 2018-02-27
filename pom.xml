@@ -18,7 +18,7 @@
 	<dependencies>
 	
 		<!-- all dependencies will be here -->
-				
+		 		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
