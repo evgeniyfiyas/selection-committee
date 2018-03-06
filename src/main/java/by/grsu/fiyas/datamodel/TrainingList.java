@@ -2,7 +2,7 @@ package by.grsu.fiyas.datamodel;
 
 import java.util.Map;
 
-public class TrainingList {
+public class TrainingList extends AbstractModel {
 	private Map<AcademicSubject, Integer> totalMark;
 
 	public Map<AcademicSubject, Integer> getTotalMark() {
@@ -16,7 +16,7 @@ public class TrainingList {
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
+		int result = super.hashCode();
 		result = prime * result + ((totalMark == null) ? 0 : totalMark.hashCode());
 		return result;
 	}
@@ -25,7 +25,7 @@ public class TrainingList {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (!super.equals(obj))
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
@@ -41,5 +41,5 @@ public class TrainingList {
 	@Override
 	public String toString() {
 		return "TrainingList [totalMark=" + totalMark + "]";
-	}	
+	}
 }

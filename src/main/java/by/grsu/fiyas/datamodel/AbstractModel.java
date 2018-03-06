@@ -1,6 +1,6 @@
 package by.grsu.fiyas.datamodel;
 
-public class AbstractModel {	
+public abstract class AbstractModel {
 	private Long id;
 
 	public Long getId() {
@@ -39,5 +39,5 @@ public class AbstractModel {
 	@Override
 	public String toString() {
 		return "AbstractModel [id=" + id + "]";
-	}	
+	}
 }

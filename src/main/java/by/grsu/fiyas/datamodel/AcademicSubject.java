@@ -39,5 +39,5 @@ public class AcademicSubject extends AbstractModel {
 	@Override
 	public String toString() {
 		return "AcademicSubject [name=" + name + "]";
-	}	
+	}
 }

@@ -6,50 +6,50 @@ import java.util.Map;
 public class Student extends AbstractModel {
 	private String name;
 	private Faculty faculty;
-	private Integer averageMark; 
-	private Date dateOfEnrollment; 	
+	private Integer averageMark;
+	private Date dateOfEnrollment;
 	private Map<AcademicSubject, Integer> marks;
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public Faculty getFaculty() {
 		return faculty;
 	}
-	
+
 	public void setFaculty(Faculty faculty) {
 		this.faculty = faculty;
 	}
-	
+
 	public Integer getAverageMark() {
 		return averageMark;
 	}
-	
+
 	public void setAverageMark(Integer averageMark) {
 		this.averageMark = averageMark;
 	}
-	
+
 	public Date getDateOfEnrollment() {
 		return dateOfEnrollment;
 	}
-	
+
 	public void setDateOfEnrollment(Date dateOfEnrollment) {
 		this.dateOfEnrollment = dateOfEnrollment;
 	}
-	
+
 	public Map<AcademicSubject, Integer> getMarks() {
 		return marks;
 	}
-	
+
 	public void setMarks(Map<AcademicSubject, Integer> marks) {
 		this.marks = marks;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -61,7 +61,7 @@ public class Student extends AbstractModel {
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -98,10 +98,10 @@ public class Student extends AbstractModel {
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", faculty=" + faculty + ", averageMark=" + averageMark + ", dateOfEnrollment="
 				+ dateOfEnrollment + ", marks=" + marks + "]";
-	}	
+	}
 }

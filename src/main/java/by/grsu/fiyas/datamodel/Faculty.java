@@ -6,26 +6,31 @@ public class Faculty extends AbstractModel {
 	private String name;
 	private Date selectionYear;
 	private Integer selectionPlan;
-	
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public Date getSelectionYear() {
 		return selectionYear;
 	}
+
 	public void setSelectionYear(Date selectionYear) {
 		this.selectionYear = selectionYear;
 	}
+
 	public Integer getSelectionPlan() {
 		return selectionPlan;
 	}
+
 	public void setSelectionPlan(Integer selectionPlan) {
 		this.selectionPlan = selectionPlan;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -35,6 +40,7 @@ public class Faculty extends AbstractModel {
 		result = prime * result + ((selectionYear == null) ? 0 : selectionYear.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -61,9 +67,9 @@ public class Faculty extends AbstractModel {
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Faculty [name=" + name + ", selectionYear=" + selectionYear + ", selectionPlan=" + selectionPlan + "]";
-	}	
+	}
 }
