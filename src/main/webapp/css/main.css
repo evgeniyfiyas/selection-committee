@@ -1,0 +1,54 @@
+.jumbotron
+{
+  padding-top: 24px;
+}
+
+.jumbotron td p
+{
+  font-size: 14px;
+}
+
+ul.feedbackPanel
+{
+  padding-left: 0px;
+}
+
+li.alert
+{
+  display: block;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+li.alert.alert-info
+{
+    color:#31708f;
+    background-color:#d9edf7;
+    border-color:#bce8f1
+}
+
+li.alert.alert-success{
+    color:#3c763d;
+    background-color:#dff0d8;
+    border-color:#d6e9c6
+}
+
+li.alert.alert-warning
+{
+    color:#8a6d3b;
+    background-color:#fcf8e3;
+    border-color:#faebcc
+}
+
+li.alert.alert-error
+{
+    color:#a94442;
+    background-color:#f2dede;
+    border-color:#ebccd1
+}
+
+.pull-right {
+    float: right !important; // Use of important emulates bootstrap
+}

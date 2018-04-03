@@ -1,6 +1,8 @@
 package by.grsu.fiyas.datamodel;
 
-public abstract class AbstractModel {
+import java.io.Serializable;
+
+public abstract class AbstractModel implements Serializable {
 	private Long id;
 
 	public Long getId() {

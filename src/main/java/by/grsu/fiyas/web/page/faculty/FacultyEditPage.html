@@ -1,0 +1,38 @@
+<wicket:extend>
+
+<wicket:fragment wicket:id="create-label"><h2>Create faculty</h2><br></wicket:fragment>
+<wicket:fragment wicket:id="update-label"><h2>Update faculty</h2><br></wicket:fragment>
+
+		<div wicket:id="feedback"></div>
+
+<form wicket:id="form">
+
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<label for="nameInput">Faculty name</label>
+				<input wicket:id="name" type="text" class="form-control" id="nameInput" placeholder="Name">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<label for="selectionPlanInput">Selection plan</label>
+				<input wicket:id="selectionPlan" type="text" class="form-control" id="selectionPlanInput" placeholder="Number of students">
+			</div>
+		</div>
+		
+		<span wicket:id="subjects" />
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+    			<input wicket:id="active" type="checkbox" class="form-check-input" id="isActiveInput">
+    			<label class="form-check-label" for="isActiveInput">Active</label>
+  			</div>
+  		</div>
+		
+		<button wicket:id="save" type="submit" class="btn btn-primary">Submit</button>
+		<button wicket:id="cancel" type="submit" class="btn btn-danger">Cancel</button>
+	
+	</form>
+
+</wicket:extend>

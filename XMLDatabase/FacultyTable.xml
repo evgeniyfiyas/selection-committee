@@ -1,0 +1,84 @@
+<by.grsu.fiyas.table.FacultyTable>
+  <rows>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>10183775861421</id>
+      <name>Math and Computer Science</name>
+      <selectionPlan>25</selectionPlan>
+      <subjects>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49882927458851</id>
+          <name>Mathematics</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49968396066296</id>
+          <name>Physics</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49968396067286</id>
+          <name>Russian language</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>10276143458708</id>
+      <name>Philology</name>
+      <selectionPlan>34</selectionPlan>
+      <subjects>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49968396067286</id>
+          <name>Russian language</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>3043821644317</id>
+          <name>Russian literature</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>3069507862317</id>
+          <name>English language</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>10292821437700</id>
+      <name>Art and Design</name>
+      <selectionPlan>12</selectionPlan>
+      <subjects>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49968396067286</id>
+          <name>Russian language</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>3043821644317</id>
+          <name>Russian literature</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>3069507862317</id>
+          <name>English language</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>26041298273899</id>
+      <name>asdasd</name>
+      <selectionPlan>22</selectionPlan>
+      <subjects>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49882927458851</id>
+          <name>Mathematics</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>49968396066296</id>
+          <name>Physics</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+        <by.grsu.fiyas.datamodel.AcademicSubject>
+          <id>3069507862317</id>
+          <name>English language</name>
+        </by.grsu.fiyas.datamodel.AcademicSubject>
+      </subjects>
+      <isEnabled>false</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+  </rows>
+</by.grsu.fiyas.table.FacultyTable>

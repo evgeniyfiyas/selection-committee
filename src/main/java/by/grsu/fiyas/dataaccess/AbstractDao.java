@@ -12,10 +12,22 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.thoughtworks.xstream.XStream;
 
+import by.grsu.fiyas.datamodel.AcademicSubject;
+import by.grsu.fiyas.datamodel.Faculty;
+import by.grsu.fiyas.datamodel.Student;
+import by.grsu.fiyas.datamodel.TrainingList;
+import by.grsu.fiyas.datamodel.UserCredentials;
+import by.grsu.fiyas.datamodel.UserProfile;
+import by.grsu.fiyas.datamodel.UserRole;
 import by.grsu.fiyas.table.AbstractTable;
+import by.grsu.fiyas.table.AcademicSubjectTable;
+import by.grsu.fiyas.table.FacultyTable;
+import by.grsu.fiyas.table.StudentTable;
+import by.grsu.fiyas.table.TrainingListTable;
+import by.grsu.fiyas.table.UserCredentialsTable;
+import by.grsu.fiyas.table.UserProfileTable;
 
 public abstract class AbstractDao<T extends AbstractTable<E>, E> implements IXmlDao<E> {
-
 	private final XStream xStream;
 	private final String rootFolderPath;
 
@@ -28,6 +40,16 @@ public abstract class AbstractDao<T extends AbstractTable<E>, E> implements IXml
 		}
 		xStream = new XStream();
 		xStream.processAnnotations(new Class[] { getTableClass() });
+
+		Class<?>[] classes = new Class[] { 
+				AcademicSubject.class, Faculty.class, Student.class, TrainingList.class, 
+				UserCredentials.class, UserProfile.class,
+				
+				AcademicSubjectTable.class, FacultyTable.class, StudentTable.class, TrainingListTable.class,
+				UserCredentialsTable.class, UserProfileTable.class,
+		};
+		XStream.setupDefaultSecurity(xStream);
+		xStream.allowTypes(classes);
 	}
 
 	/**
@@ -115,5 +137,4 @@ public abstract class AbstractDao<T extends AbstractTable<E>, E> implements IXml
 	}
 
 	protected abstract Class<T> getTableClass();
-
 }

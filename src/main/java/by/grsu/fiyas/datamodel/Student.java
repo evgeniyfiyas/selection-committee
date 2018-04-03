@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class Student extends AbstractModel {
 	private String name;
-	private Faculty faculty;
 	private Integer averageMark;
 	private Date dateOfEnrollment;
 	private Map<AcademicSubject, Integer> marks;
@@ -16,14 +15,6 @@ public class Student extends AbstractModel {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public Faculty getFaculty() {
-		return faculty;
-	}
-
-	public void setFaculty(Faculty faculty) {
-		this.faculty = faculty;
 	}
 
 	public Integer getAverageMark() {
@@ -56,7 +47,6 @@ public class Student extends AbstractModel {
 		int result = super.hashCode();
 		result = prime * result + ((averageMark == null) ? 0 : averageMark.hashCode());
 		result = prime * result + ((dateOfEnrollment == null) ? 0 : dateOfEnrollment.hashCode());
-		result = prime * result + ((faculty == null) ? 0 : faculty.hashCode());
 		result = prime * result + ((marks == null) ? 0 : marks.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
@@ -81,11 +71,6 @@ public class Student extends AbstractModel {
 				return false;
 		} else if (!dateOfEnrollment.equals(other.dateOfEnrollment))
 			return false;
-		if (faculty == null) {
-			if (other.faculty != null)
-				return false;
-		} else if (!faculty.equals(other.faculty))
-			return false;
 		if (marks == null) {
 			if (other.marks != null)
 				return false;
@@ -101,7 +86,8 @@ public class Student extends AbstractModel {
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", faculty=" + faculty + ", averageMark=" + averageMark + ", dateOfEnrollment="
-				+ dateOfEnrollment + ", marks=" + marks + "]";
+		return "Student [name=" + name + ", averageMark=" + averageMark + ", dateOfEnrollment=" + dateOfEnrollment
+				+ ", marks=" + marks + "]";
 	}
+
 }

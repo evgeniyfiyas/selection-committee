@@ -1,0 +1,12 @@
+<by.grsu.fiyas.table.AcademicSubjectTable>
+  <rows>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>49882927458851</id>
+      <name>TestSubject</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>49968396066296</id>
+      <name>TestSubject</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+  </rows>
+</by.grsu.fiyas.table.AcademicSubjectTable>

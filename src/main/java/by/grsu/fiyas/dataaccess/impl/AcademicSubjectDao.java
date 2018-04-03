@@ -7,7 +7,7 @@ import by.grsu.fiyas.dataaccess.AbstractDao;
 import by.grsu.fiyas.table.AcademicSubjectTable;
 import by.grsu.fiyas.datamodel.AcademicSubject;
 
-public class AcademicSubjectDao extends AbstractDao<AcademicSubjectTable, AcademicSubject> {
+public class AcademicSubjectDao extends AbstractDao<AcademicSubjectTable, AcademicSubject> implements Serializable {
 
 	public AcademicSubjectDao(final String rootFolderPath) {
 		super(rootFolderPath);
@@ -34,7 +34,7 @@ public class AcademicSubjectDao extends AbstractDao<AcademicSubjectTable, Academ
 	}
 
 	@Override
-	public AcademicSubject get(Serializable id) {
+	public AcademicSubject get(Long id) {
 		final AcademicSubjectTable academicSubjectTable = deserializeFromXml();
 		for (final AcademicSubject row : academicSubjectTable.getRows()) {
 			if (row.getId().equals(id)) {
@@ -51,7 +51,7 @@ public class AcademicSubjectDao extends AbstractDao<AcademicSubjectTable, Academ
 	}
 
 	@Override
-	public void delete(Serializable id) {
+	public void delete(Long id) {
 		final AcademicSubjectTable academicSubjectTable = deserializeFromXml();
 		AcademicSubject toBeDeleted = null;
 		for (final AcademicSubject row : academicSubjectTable.getRows()) {

@@ -1,0 +1,30 @@
+<wicket:panel>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Selection plan</th>
+				<th>Required subjects</th>
+				<th>Active</th>
+				<th>Actions</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr wicket:id="rows">
+				<wicket:enclosure child="id">
+					<td><span wicket:id="id" /></td>
+				</wicket:enclosure>
+				<td><span wicket:id="name" /></td>
+				<td><span wicket:id="selectionPlan" /></td>
+				<td><span wicket:id="subjects" /></td>
+				<td><input wicket:id="active" type="checkbox" /></td>
+				<td class="actions">
+					<a wicket:id="edit-link"><span class="glyphicon glyphicon-pencil"></span></a>
+					<a wicket:id="delete-link"><span class="glyphicon glyphicon-remove"></span></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</wicket:panel>

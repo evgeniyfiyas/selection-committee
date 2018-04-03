@@ -1,18 +1,20 @@
 package by.grsu.fiyas.test;
 
-import java.util.Date;
+import java.awt.List;
+import java.util.Arrays;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import by.grsu.fiyas.dataaccess.impl.FacultyDao;
+import by.grsu.fiyas.datamodel.AcademicSubject;
 import by.grsu.fiyas.datamodel.Faculty;
 import junit.framework.Assert;
 
 public class FacultyDaoTest {
 
-	private static final String TEST_XML_FOLDER = "testXmlFolder";
+	private static final String TEST_XML_FOLDER = "XMLDatabaseTest";
 	private static FacultyDao facultyDao;
 
 	@BeforeClass
@@ -53,7 +55,18 @@ public class FacultyDaoTest {
 		final Faculty newFaculty = new Faculty();
 		newFaculty.setName("Faculty of math and CS");
 		newFaculty.setSelectionPlan(23);
-		newFaculty.setSelectionYear(new Date(01/01/2012));
+		newFaculty.setIsEnabled(true);
+		
+		AcademicSubject s1 = new AcademicSubject();
+		s1.setName("Math");
+		
+		AcademicSubject s2 = new AcademicSubject();
+		s2.setName("Physics");
+		
+		AcademicSubject s3 = new AcademicSubject();
+		s3.setName("Russian language");
+		
+		newFaculty.setSubjects(Arrays.asList(s1, s2, s3));
 		facultyDao.saveNew(newFaculty);
 		return newFaculty;
 	}

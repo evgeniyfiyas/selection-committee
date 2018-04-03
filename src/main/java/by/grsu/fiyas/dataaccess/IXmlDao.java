@@ -1,6 +1,5 @@
 package by.grsu.fiyas.dataaccess;
 
-import java.io.Serializable;
 import java.util.List;
 
 public interface IXmlDao<E> {
@@ -9,10 +8,10 @@ public interface IXmlDao<E> {
 
 	void update(E entity);
 
-	E get(Serializable id);
+	E get(Long id);
 
 	List<E> getAll();
 
-	void delete(Serializable id);
+	void delete(Long id);
 
 }

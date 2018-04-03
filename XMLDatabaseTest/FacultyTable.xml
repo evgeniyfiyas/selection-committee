@@ -1,0 +1,118 @@
+<by.grsu.fiyas.table.FacultyTable>
+  <rows>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>55809580176695</id>
+      <name>Faculty of mathematics and computer science</name>
+      <selectionPlan>23</selectionPlan>
+      <subjects class="java.util.Arrays$ArrayList">
+        <a class="by.grsu.fiyas.datamodel.AcademicSubject-array">
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Math</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Physics</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian language</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+        </a>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>55809699108307</id>
+      <name>Faculty of something</name>
+      <selectionPlan>23</selectionPlan>
+      <subjects class="java.util.Arrays$ArrayList">
+        <a class="by.grsu.fiyas.datamodel.AcademicSubject-array">
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian literature</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian language</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>History of Belarus</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+        </a>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>55899315976711</id>
+      <name>Faculty of math and CS</name>
+      <selectionPlan>23</selectionPlan>
+      <subjects class="java.util.Arrays$ArrayList">
+        <a class="by.grsu.fiyas.datamodel.AcademicSubject-array">
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Math</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Physics</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian language</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+        </a>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>55899405044063</id>
+      <name>Faculty of math and CS</name>
+      <selectionPlan>23</selectionPlan>
+      <subjects class="java.util.Arrays$ArrayList">
+        <a class="by.grsu.fiyas.datamodel.AcademicSubject-array">
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Math</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Physics</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian language</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+        </a>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>55902577055711</id>
+      <name>Faculty of math and CS</name>
+      <selectionPlan>23</selectionPlan>
+      <subjects class="java.util.Arrays$ArrayList">
+        <a class="by.grsu.fiyas.datamodel.AcademicSubject-array">
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Math</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Physics</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian language</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+        </a>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+    <by.grsu.fiyas.datamodel.Faculty>
+      <id>55902692449154</id>
+      <name>Faculty of math and CS</name>
+      <selectionPlan>23</selectionPlan>
+      <subjects class="java.util.Arrays$ArrayList">
+        <a class="by.grsu.fiyas.datamodel.AcademicSubject-array">
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Math</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Physics</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+          <by.grsu.fiyas.datamodel.AcademicSubject>
+            <name>Russian language</name>
+          </by.grsu.fiyas.datamodel.AcademicSubject>
+        </a>
+      </subjects>
+      <isEnabled>true</isEnabled>
+    </by.grsu.fiyas.datamodel.Faculty>
+  </rows>
+</by.grsu.fiyas.table.FacultyTable>

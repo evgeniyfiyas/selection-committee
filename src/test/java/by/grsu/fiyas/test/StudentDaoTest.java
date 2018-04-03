@@ -12,7 +12,7 @@ import junit.framework.Assert;
 
 public class StudentDaoTest {
 	
-	private static final String TEST_XML_FOLDER = "testXmlFolder";
+	private static final String TEST_XML_FOLDER = "XMLDatabaseTest";
 	private static StudentDao studentDao;
 
 	@BeforeClass

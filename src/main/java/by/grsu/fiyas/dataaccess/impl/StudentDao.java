@@ -7,7 +7,7 @@ import by.grsu.fiyas.dataaccess.AbstractDao;
 import by.grsu.fiyas.datamodel.Student;
 import by.grsu.fiyas.table.StudentTable;
 
-public class StudentDao extends AbstractDao<StudentTable, Student> {
+public class StudentDao extends AbstractDao<StudentTable, Student> implements Serializable {
 
 	public StudentDao(final String rootFolderPath) {
 		super(rootFolderPath);
@@ -29,7 +29,6 @@ public class StudentDao extends AbstractDao<StudentTable, Student> {
 				row.setName(entity.getName());
 				row.setAverageMark(entity.getAverageMark());
 				row.setDateOfEnrollment(entity.getDateOfEnrollment());
-				row.setFaculty(entity.getFaculty());
 				row.setMarks(entity.getMarks());
 				break;
 			}
@@ -38,7 +37,7 @@ public class StudentDao extends AbstractDao<StudentTable, Student> {
 	}
 
 	@Override
-	public Student get(Serializable id) {
+	public Student get(Long id) {
 		final StudentTable studentTable = deserializeFromXml();
 		for (final Student row : studentTable.getRows()) {
 			if (row.getId().equals(id)) {
@@ -55,7 +54,7 @@ public class StudentDao extends AbstractDao<StudentTable, Student> {
 	}
 
 	@Override
-	public void delete(Serializable id) {
+	public void delete(Long id) {
 		final StudentTable studentTable = deserializeFromXml();
 		Student toBeDeleted = null;
 		for (final Student row : studentTable.getRows()) {

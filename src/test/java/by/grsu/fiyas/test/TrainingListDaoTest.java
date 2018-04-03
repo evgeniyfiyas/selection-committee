@@ -9,7 +9,7 @@ import by.grsu.fiyas.datamodel.TrainingList;
 import junit.framework.Assert;
 
 public class TrainingListDaoTest {
-	private static final String TEST_XML_FOLDER = "testXmlFolder";
+	private static final String TEST_XML_FOLDER = "XMLDatabaseTest";
 	private static TrainingListDao trainingListDao;
 
 	@BeforeClass

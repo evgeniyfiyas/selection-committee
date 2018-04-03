@@ -7,7 +7,7 @@ import by.grsu.fiyas.dataaccess.AbstractDao;
 import by.grsu.fiyas.datamodel.Faculty;
 import by.grsu.fiyas.table.FacultyTable;
 
-public class FacultyDao extends AbstractDao<FacultyTable, Faculty> {
+public class FacultyDao extends AbstractDao<FacultyTable, Faculty> implements Serializable {
 
 	public FacultyDao(final String rootFolderPath) {
 		super(rootFolderPath);
@@ -27,8 +27,9 @@ public class FacultyDao extends AbstractDao<FacultyTable, Faculty> {
 		for (final Faculty row : facultyTable.getRows()) {
 			if (row.getId().equals(entity.getId())) {
 				row.setName(entity.getName());
-				row.setSelectionYear(entity.getSelectionYear());
 				row.setSelectionPlan(entity.getSelectionPlan());
+				row.setSubjects(entity.getSubjects());
+				row.setIsEnabled(entity.getIsEnabled());
 				break;
 			}
 		}
@@ -36,7 +37,7 @@ public class FacultyDao extends AbstractDao<FacultyTable, Faculty> {
 	}
 
 	@Override
-	public Faculty get(Serializable id) {
+	public Faculty get(Long id) {
 		final FacultyTable facultyTable = deserializeFromXml();
 		for (final Faculty row : facultyTable.getRows()) {
 			if (row.getId().equals(id)) {
@@ -53,7 +54,7 @@ public class FacultyDao extends AbstractDao<FacultyTable, Faculty> {
 	}
 
 	@Override
-	public void delete(Serializable id) {
+	public void delete(Long id) {
 		final FacultyTable facultyTable = deserializeFromXml();
 		Faculty toBeDeleted = null;
 		for (final Faculty row : facultyTable.getRows()) {

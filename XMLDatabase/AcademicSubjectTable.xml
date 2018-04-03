@@ -1,0 +1,24 @@
+<by.grsu.fiyas.table.AcademicSubjectTable>
+  <rows>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>49882927458851</id>
+      <name>Mathematics</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>49968396066296</id>
+      <name>Physics</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>49968396067286</id>
+      <name>Russian language</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>3043821644317</id>
+      <name>Russian literature</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+    <by.grsu.fiyas.datamodel.AcademicSubject>
+      <id>3069507862317</id>
+      <name>English language</name>
+    </by.grsu.fiyas.datamodel.AcademicSubject>
+  </rows>
+</by.grsu.fiyas.table.AcademicSubjectTable>

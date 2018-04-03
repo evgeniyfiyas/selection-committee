@@ -1,0 +1,35 @@
+<wicket:panel>
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand">Enrollment campaign</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a wicket:id="link-home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a wicket:id="link-register"><span class="glyphicon glyphicon-file"></span> Register as student</a></li>
+						<li><a wicket:id="link-stats"><span class="glyphicon glyphicon-stats"></span> Statistics</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="dropdown">
+                			<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Administration <span class="caret"></span></a>
+                			<ul class="dropdown-menu">
+                				<li><a wicket:id="link-login">Sign in</a></li>
+                				                  				
+                  				<li><a wicket:id="link-editFaculties">Edit faculties</a></li>
+                  				<li><a wicket:id="link-editAcademicSubjects">Edit subjects</a></li>
+                  				
+                  				<wicket:fragment wicket:id="separator"><li role="separator" class="divider"></li></wicket:fragment>
+
+                  
+                  				<li><a wicket:id="link-logout">Sign out</a></li>
+                			</ul>
+              			</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</wicket:panel>

@@ -7,7 +7,7 @@ import by.grsu.fiyas.dataaccess.AbstractDao;
 import by.grsu.fiyas.datamodel.TrainingList;
 import by.grsu.fiyas.table.TrainingListTable;
 
-public class TrainingListDao extends AbstractDao<TrainingListTable, TrainingList> {
+public class TrainingListDao extends AbstractDao<TrainingListTable, TrainingList> implements Serializable {
 	public TrainingListDao(final String rootFolderPath) {
 		super(rootFolderPath);
 	}
@@ -25,7 +25,10 @@ public class TrainingListDao extends AbstractDao<TrainingListTable, TrainingList
 		final TrainingListTable trainingListTable = deserializeFromXml();
 		for (final TrainingList row : trainingListTable.getRows()) {
 			if (row.getId().equals(entity.getId())) {
-				row.setTotalMark(entity.getTotalMark());
+				row.setSelectionYear(entity.getSelectionYear());
+				row.setAverageMark(entity.getAverageMark());
+				row.setFaculty(entity.getFaculty());
+				row.setStudent(entity.getStudent());
 				break;
 			}
 		}
@@ -33,7 +36,7 @@ public class TrainingListDao extends AbstractDao<TrainingListTable, TrainingList
 	}
 
 	@Override
-	public TrainingList get(Serializable id) {
+	public TrainingList get(Long id) {
 		final TrainingListTable trainingListTable = deserializeFromXml();
 		for (final TrainingList row : trainingListTable.getRows()) {
 			if (row.getId().equals(id)) {
@@ -50,7 +53,7 @@ public class TrainingListDao extends AbstractDao<TrainingListTable, TrainingList
 	}
 
 	@Override
-	public void delete(Serializable id) {
+	public void delete(Long id) {
 		final TrainingListTable trainingListTable = deserializeFromXml();
 		TrainingList toBeDeleted = null;
 		for (final TrainingList row : trainingListTable.getRows()) {

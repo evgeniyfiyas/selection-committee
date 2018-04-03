@@ -1,0 +1,35 @@
+<wicket:extend>
+
+	<h2>Login</h2><br>
+
+	<div class="alert alert-info" role="alert">
+  		Default login: admin<br>
+  		Default password: admin
+	</div>
+
+	<div wicket:id="feedbackpanel"></div>
+
+	<form wicket:id="form">
+
+
+
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<label for="emailInput">Email address</label>
+				<input wicket:id="username" autocomplete="off" type="text" class="form-control" id="emailInput" placeholder="Enter email">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<label for="passwordInput">Password</label>
+				<input wicket:id="password" type="password" class="form-control" id="passwordInput" placeholder="Password">
+			</div>
+		</div>
+		
+		<button wicket:id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+
+
+</wicket:extend>

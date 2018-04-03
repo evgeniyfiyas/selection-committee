@@ -1,0 +1,16 @@
+<by.grsu.fiyas.table.UserProfileTable>
+  <rows>
+    <by.grsu.fiyas.datamodel.UserProfile>
+      <id>50428338853524</id>
+      <credentials>
+        <id>50428338853524</id>
+        <email>admin</email>
+        <password>admin</password>
+        <role>admin</role>
+      </credentials>
+      <firstName>John</firstName>
+      <lastName>Doe</lastName>
+      <created>2018-03-27 20:16:00.922 UTC</created>
+    </by.grsu.fiyas.datamodel.UserProfile>
+  </rows>
+</by.grsu.fiyas.table.UserProfileTable>

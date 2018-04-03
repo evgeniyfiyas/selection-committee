@@ -10,8 +10,11 @@ import junit.framework.Assert;
 
 public class AcademicSubjectDaoTest {
 
-	private static final String TEST_XML_FOLDER = "testXmlFolder";
 	private static AcademicSubjectDao academicSubjectDao;
+	private static final String TEST_XML_FOLDER = "XMLDatabaseTest";
+	
+	// Declare test variables below
+	private static final String TEST_SUBJECT_NAME = "TestSubject";
 
 	@BeforeClass
 	public static void createDao() {
@@ -29,6 +32,7 @@ public class AcademicSubjectDaoTest {
 		System.out.println("Start 'save' test for AcademicSubject");
 		final AcademicSubject newAcademicSubject = saveNewAcademicSubject();
 		Assert.assertNotNull(academicSubjectDao.get(newAcademicSubject.getId()));
+		academicSubjectDao.delete(newAcademicSubject.getId());
 	}
 
 	@Test
@@ -49,8 +53,9 @@ public class AcademicSubjectDaoTest {
 
 	private AcademicSubject saveNewAcademicSubject() {
 		final AcademicSubject newAcademicSubject = new AcademicSubject();
-		newAcademicSubject.setName("Computer Science");
+		newAcademicSubject.setName(TEST_SUBJECT_NAME);
 		academicSubjectDao.saveNew(newAcademicSubject);
 		return newAcademicSubject;
 	}
+	
 }
