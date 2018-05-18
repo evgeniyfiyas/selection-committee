@@ -1,0 +1,73 @@
+<wicket:extend>
+
+<wicket:fragment wicket:id="create-label"><h2>Create student</h2><br></wicket:fragment>
+<wicket:fragment wicket:id="update-label"><h2>Update student</h2><br></wicket:fragment>
+
+		<div wicket:id="feedback"></div>
+
+<form wicket:id="form">
+
+		<div class="form-group row">
+			<div class="col-lg-6">
+				<label for="nameInput">Student's name</label>
+				<input wicket:id="name" type="text" class="form-control" id="nameInput" placeholder="e.g. John Doe">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-lg-6">
+				<label for="facultyInput">Faculty</label>
+				<select wicket:id="faculty" class="form-control"></select>
+			</div>
+		</div>
+		
+		
+		<label>Marks</label>
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<label for="certificateInput">Certificate</label>
+				<input wicket:id="certificate" type="text" class="form-control" id="certificateInput" placeholder="0-100">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<select wicket:id="subject1" class="form-control"></select>
+			</div>
+			<div class="col-lg-3">
+				<input wicket:id="subject1mark" type="text" class="form-control" placeholder="0-100">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<select wicket:id="subject2" class="form-control"></select>
+			</div>
+			<div class="col-lg-3">
+				<input wicket:id="subject2mark" type="text" class="form-control" placeholder="0-100">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<select wicket:id="subject3" class="form-control"></select>
+			</div>
+			<div class="col-lg-3">
+				<input wicket:id="subject3mark" type="text" class="form-control" placeholder="0-100">
+			</div>
+		</div>	
+		
+		<div class="form-group row">
+			<div class="col-lg-3">
+				<label for="dateInput">Date of enrollment:</label>
+				<input wicket:id="date" type="text" class="form-control" id="dateInput">
+			</div>
+		</div>					
+		
+		<button wicket:id="save" type="submit" class="btn btn-primary">Submit</button>
+		<button wicket:id="cancel" type="submit" class="btn btn-danger">Cancel</button>
+	
+	</form>
+
+</wicket:extend>

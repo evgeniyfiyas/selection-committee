@@ -1,12 +1,15 @@
 package by.grsu.fiyas.test;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import by.grsu.fiyas.dataaccess.impl.StudentDao;
+import by.grsu.fiyas.datamodel.AcademicSubject;
 import by.grsu.fiyas.datamodel.Student;
 import junit.framework.Assert;
 
@@ -52,7 +55,25 @@ public class StudentDaoTest {
 	private Student saveNewStudent() {
 		final Student newStudent = new Student();
 		newStudent.setName("Fiyas Yauheni");
-		newStudent.setAverageMark(93);
+		newStudent.setCertificate(93);
+		Map<AcademicSubject, Integer> marks = new HashMap<AcademicSubject, Integer>();
+		
+		AcademicSubject s1 = new AcademicSubject();
+		s1.setName("Subject1");
+		
+		AcademicSubject s2 = new AcademicSubject();
+		s2.setName("Subject2");
+		
+		AcademicSubject s3 = new AcademicSubject();
+		s3.setName("Subject3");
+		
+		
+		marks.put(s1, 30);
+		marks.put(s2, 25);
+		marks.put(s3, 11);		
+		
+		newStudent.setDateOfEnrollment(new Date());
+	//	newStudent.setMarks(marks);
 		newStudent.setDateOfEnrollment(new Date());
 		studentDao.saveNew(newStudent);
 		return newStudent;

@@ -27,9 +27,10 @@ public class StudentDao extends AbstractDao<StudentTable, Student> implements Se
 		for (final Student row : studentTable.getRows()) {
 			if (row.getId().equals(entity.getId())) {
 				row.setName(entity.getName());
-				row.setAverageMark(entity.getAverageMark());
+				row.setCertificate(entity.getCertificate());
 				row.setDateOfEnrollment(entity.getDateOfEnrollment());
 				row.setMarks(entity.getMarks());
+				row.setFaculty(entity.getFaculty());
 				break;
 			}
 		}

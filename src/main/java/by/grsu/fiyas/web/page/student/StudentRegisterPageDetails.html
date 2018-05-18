@@ -1,7 +1,19 @@
 <wicket:extend>
 
+<p><span wicket:id="title"></span> faculty register form:</p><br/>
+
+		<div wicket:id="feedback"></div>
+
 <form wicket:id="form">		
 
+			<div class="form-group row">
+				<div class="col-lg-6">
+					<label for="nameInput">Name</label>
+					<input wicket:id="name" type="text" class="form-control" id="nameInput" placeholder="e.g. John Doe">
+				</div>
+			</div>
+			
+			
 			<div class="form-group row">
 				<div class="col-lg-3">
 					<label for="subj1Input"><span wicket:id="subj1lbl"></span></label>
@@ -23,7 +35,25 @@
 					<input wicket:id="certificate" type="text" class="form-control" id="certificateInput" placeholder="0-100">
 				</div>
 			</div>
-
+			
+			
+			
+			<div class="alert alert-danger" role="alert">
+  				Field below MUST remain hidden from the end-user.<br/>
+  				It is visible now only for DEVELOPMENT purposes.
+			</div>
+			
+			<div class="form-group row">
+				<div class="col-lg-6">
+					<label for="dateInput">Date of enrollment</label>
+					<input type="text" wicket:id="date" />
+				</div>
+			</div>
+			
+			
+			<button wicket:id="save" type="submit" class="btn btn-primary">Submit</button>
+			<button wicket:id="cancel" type="submit" class="btn btn-danger">Cancel</button>
+			
 </form>
 
 </wicket:extend>

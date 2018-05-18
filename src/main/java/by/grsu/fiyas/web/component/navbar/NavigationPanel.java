@@ -10,6 +10,7 @@ import by.grsu.fiyas.web.page.home.HomePage;
 import by.grsu.fiyas.web.page.login.LoginPage;
 import by.grsu.fiyas.web.page.stats.StatsPage;
 import by.grsu.fiyas.web.page.student.StudentRegisterPage;
+import by.grsu.fiyas.web.page.student.StudentsPage;
 import by.grsu.fiyas.web.app.AuthorizedSession;
 
 public class NavigationPanel extends Panel {
@@ -90,6 +91,15 @@ public class NavigationPanel extends Panel {
 		};
 		linkEditAcademicSubjects.setVisible(AuthorizedSession.get().isSignedIn());
 		add(linkEditAcademicSubjects);
+		
+		Link linkEditStudents = new Link("link-editStudents") {
+			@Override
+			public void onClick() {
+				setResponsePage(new StudentsPage());
+			}
+		};
+		linkEditStudents.setVisible(AuthorizedSession.get().isSignedIn());
+		add(linkEditStudents);
 		
 		/* Administration dropdown end */
 	}

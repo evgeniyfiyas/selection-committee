@@ -61,9 +61,9 @@
       <isEnabled>true</isEnabled>
     </by.grsu.fiyas.datamodel.Faculty>
     <by.grsu.fiyas.datamodel.Faculty>
-      <id>26041298273899</id>
-      <name>asdasd</name>
-      <selectionPlan>22</selectionPlan>
+      <id>593743384672212</id>
+      <name>Test</name>
+      <selectionPlan>3</selectionPlan>
       <subjects>
         <by.grsu.fiyas.datamodel.AcademicSubject>
           <id>49882927458851</id>
@@ -74,11 +74,11 @@
           <name>Physics</name>
         </by.grsu.fiyas.datamodel.AcademicSubject>
         <by.grsu.fiyas.datamodel.AcademicSubject>
-          <id>3069507862317</id>
-          <name>English language</name>
+          <id>49968396067286</id>
+          <name>Russian language</name>
         </by.grsu.fiyas.datamodel.AcademicSubject>
       </subjects>
-      <isEnabled>false</isEnabled>
+      <isEnabled>true</isEnabled>
     </by.grsu.fiyas.datamodel.Faculty>
   </rows>
 </by.grsu.fiyas.table.FacultyTable>

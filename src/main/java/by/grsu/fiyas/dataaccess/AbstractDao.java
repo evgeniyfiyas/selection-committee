@@ -11,10 +11,12 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.converters.extended.NamedMapConverter;
 
 import by.grsu.fiyas.datamodel.AcademicSubject;
 import by.grsu.fiyas.datamodel.Faculty;
 import by.grsu.fiyas.datamodel.Student;
+import by.grsu.fiyas.datamodel.AcademicSubjectWrapper;
 import by.grsu.fiyas.datamodel.TrainingList;
 import by.grsu.fiyas.datamodel.UserCredentials;
 import by.grsu.fiyas.datamodel.UserProfile;
@@ -43,7 +45,7 @@ public abstract class AbstractDao<T extends AbstractTable<E>, E> implements IXml
 
 		Class<?>[] classes = new Class[] { 
 				AcademicSubject.class, Faculty.class, Student.class, TrainingList.class, 
-				UserCredentials.class, UserProfile.class,
+				UserCredentials.class, UserProfile.class, AcademicSubjectWrapper.class,
 				
 				AcademicSubjectTable.class, FacultyTable.class, StudentTable.class, TrainingListTable.class,
 				UserCredentialsTable.class, UserProfileTable.class,
